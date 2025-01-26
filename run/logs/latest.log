@@ -1,0 +1,127 @@
+[26Jan2025 13:55:11.399] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.1.65, --assetIndex, 17, --assetsDir, C:\\Users\\perso\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.neoForgeVersion, 21.1.65, --fml.fmlVersion, 4.0.24, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
+[26Jan2025 13:55:11.402] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[26Jan2025 13:55:11.405] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[26Jan2025 13:55:11.565] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[26Jan2025 13:55:11.670] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[26Jan2025 13:55:11.803] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[26Jan2025 13:55:11.886] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/perso/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23131!/ Service=ModLauncher Env=CLIENT
+[26Jan2025 13:55:12.054] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Radeon 7 GL version 4.6.0 Core Profile Context 24.12.1.241127, ATI Technologies Inc.
+[26Jan2025 13:55:12.227] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[26Jan2025 13:55:13.082] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 21.1.65, --gameDir, ., --assetsDir, C:\Users\perso\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[26Jan2025 13:55:14.741] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 331 milliseconds
+[26Jan2025 13:55:14.990] [pool-6-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[26Jan2025 13:55:19.183] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[26Jan2025 13:55:19.185] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[26Jan2025 13:55:19.187] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[26Jan2025 13:55:19.189] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[26Jan2025 13:55:19.189] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[26Jan2025 13:55:19.298] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Mcreator/VeinVantage/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/assets/.mcassetsroot' uses unexpected schema
+[26Jan2025 13:55:19.298] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Mcreator/VeinVantage/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/data/.mcassetsroot' uses unexpected schema
+[26Jan2025 13:55:19.327] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[26Jan2025 13:55:19.333] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[26Jan2025 13:55:19.426] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[26Jan2025 13:55:19.657] [Render thread/FATAL] [net.neoforged.fml.ModLoader/CORE]: Error during pre-loading phase: File D:\Mcreator\VeinVantage\build\classes\java\main is not a valid mod file
+com.electronwill.nightconfig.core.io.ParsingException: Invalid unicode codepoint: D83D
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.parseUnicodeCodepoint(StringParser.java:186) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.unescape(StringParser.java:171) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.parseBasic(StringParser.java:25) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.ValueParser.parse(ValueParser.java:49) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.ValueParser.parse(ValueParser.java:73) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:67) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:124) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:87) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:45) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:18) ~[toml-3.8.0.jar%23100!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:99) ~[core-3.8.0.jar%2399!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:216) ~[core-3.8.0.jar%2399!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.file.AsyncFileConfig.loadNow(AsyncFileConfig.java:189) ~[core-3.8.0.jar%2399!/:?]
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.file.AsyncFileConfig.load(AsyncFileConfig.java:270) ~[core-3.8.0.jar%2399!/:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFileParser.modsTomlParser(ModFileParser.java:48) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFileParser.readModList(ModFileParser.java:35) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:77) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:66) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.readers.JarModsDotTomlModFileReader.createModFile(JarModsDotTomlModFileReader.java:45) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.readers.JarModsDotTomlModFileReader.read(JarModsDotTomlModFileReader.java:88) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModDiscoverer$DiscoveryPipeline.addJarContent(ModDiscoverer.java:202) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModDiscoverer$DiscoveryPipeline.addPath(ModDiscoverer.java:179) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.locators.UserdevLocator.findCandidates(UserdevLocator.java:34) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModDiscoverer.discoverMods(ModDiscoverer.java:72) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.FMLLoader.beginModScan(FMLLoader.java:125) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.FMLServiceProvider.beginScanning(FMLServiceProvider.java:84) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServiceDecorator.runScan(TransformationServiceDecorator.java:97) ~[modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.lambda$runScanningTransformationServices$7(TransformationServicesHandler.java:94) ~[modlauncher-11.0.4.jar%23121!/:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1787) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.runScanningTransformationServices(TransformationServicesHandler.java:96) ~[modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:50) ~[modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:84) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?]
+[26Jan2025 13:55:19.784] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.sound.SoundEngineLoadEvent to a broken mod state
+[26Jan2025 13:55:19.869] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterColorHandlersEvent$Block to a broken mod state
+[26Jan2025 13:55:19.871] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterColorHandlersEvent$Item to a broken mod state
+[26Jan2025 13:55:19.907] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterRenderBuffersEvent to a broken mod state
+[26Jan2025 13:55:19.987] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent to a broken mod state
+[26Jan2025 13:55:20.015] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RenderLevelStageEvent$RegisterStageEvent to a broken mod state
+[26Jan2025 13:55:20.064] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent to a broken mod state
+[26Jan2025 13:55:20.064] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterSpriteSourceTypesEvent to a broken mod state
+[26Jan2025 13:55:20.086] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterMenuScreensEvent to a broken mod state
+[26Jan2025 13:55:20.086] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent to a broken mod state
+[26Jan2025 13:55:20.086] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterLayerDefinitions to a broken mod state
+[26Jan2025 13:55:20.086] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterRenderers to a broken mod state
+[26Jan2025 13:55:20.087] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent to a broken mod state
+[26Jan2025 13:55:20.087] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterEntitySpectatorShadersEvent to a broken mod state
+[26Jan2025 13:55:20.087] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent to a broken mod state
+[26Jan2025 13:55:20.090] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterRecipeBookCategoriesEvent to a broken mod state
+[26Jan2025 13:55:20.090] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterGuiLayersEvent to a broken mod state
+[26Jan2025 13:55:20.091] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent to a broken mod state
+[26Jan2025 13:55:20.092] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterNamedRenderTypesEvent to a broken mod state
+[26Jan2025 13:55:20.092] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterColorHandlersEvent$ColorResolvers to a broken mod state
+[26Jan2025 13:55:20.093] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterItemDecorationsEvent to a broken mod state
+[26Jan2025 13:55:20.097] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterPresetEditorsEvent to a broken mod state
+[26Jan2025 13:55:20.099] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.gui.map.RegisterMapDecorationRenderersEvent to a broken mod state
+[26Jan2025 13:55:20.099] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterDimensionTransitionScreenEvent to a broken mod state
+[26Jan2025 13:55:20.109] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.RegisterJsonAnimationTypesEvent to a broken mod state
+[26Jan2025 13:55:20.189] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla
+[26Jan2025 13:55:20.229] [Render thread/ERROR] [net.neoforged.fml.ModLoader/]: Cowardly refusing to send event net.neoforged.neoforge.client.event.ModelEvent$RegisterGeometryLoaders to a broken mod state
+[26Jan2025 13:55:20.326] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[26Jan2025 13:55:20.326] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[26Jan2025 13:55:20.826] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[26Jan2025 13:55:20.848] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Shutdown failure!
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.HashMap.forEach(HashMap.java:1432) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.close(TextureManager.java:167) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.close(Minecraft.java:1122) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.destroy(Minecraft.java:1094) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:236) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?]

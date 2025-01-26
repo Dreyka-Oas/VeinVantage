@@ -1,0 +1,176 @@
+{
+  "mod_elements": [
+    {
+      "name": "VeinSweep",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_sweep",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vein_vantage/enchantment/vein_sweep.json"
+        ]
+      }
+    },
+    {
+      "name": "VeinSweepStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vein_sweep_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/veinvantage/procedures/VeinSweepStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearingStrike",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clearing_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vein_vantage/enchantment/clearing_strike.json"
+        ]
+      }
+    },
+    {
+      "name": "ClearingStrikeStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "clearing_strike_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/veinvantage/procedures/ClearingStrikeStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EchoMinerStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_miner_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/veinvantage/procedures/EchoMinerStartProcedure.java"
+        ],
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "time_dist",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "block_broken",
+      "type": "blockstate",
+      "scope": "player_lifetime",
+      "value": "Blocks.AIR.defaultBlockState()"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:ClearingStrike",
+      "~CUSTOM:VeinSweep"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:ClearingStrike",
+      "~CUSTOM:VeinSweep"
+    ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:ClearingStrike",
+      "~CUSTOM:VeinSweep"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "enchantment.vein_vantage.vein_sweep": "Vein Sweep",
+      "enchantment.vein_vantage.clearing_strike": "Clearing Strike"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "vein_vantage",
+    "modName": "Vein Vantage",
+    "version": "0.1.0",
+    "description": "Better Mining",
+    "author": "Dreyka Oas",
+    "websiteURL": "https://github.com/Dreyka-Oas/Vein-Vantage.git",
+    "license": "Apache License version 2.0",
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Start",
+    "modElementsPackage": "oas.work.veinvantage"
+  },
+  "mcreatorVersion": 202400452410
+}

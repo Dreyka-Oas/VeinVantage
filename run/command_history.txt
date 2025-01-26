@@ -1,0 +1,17 @@
+/gamemode survival
+/effect give Dev minecraft:night_vision infinite
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/give Dev vein_vantage:debris_extractor
+/gamemode survival
+/gamemode creative
+/effect give Dev minecraft:night_vision infinite
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/clear
+/gamemode survival
