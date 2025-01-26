@@ -1,7 +1,7 @@
 package oas.work.veinvantage.procedures;
 
-import oas.work.veinvantage.network.VeinVantageModVariables;
-import oas.work.veinvantage.VeinVantageMod;
+import oas.work.vein_vantage.network.VeinVantageModVariables;
+import oas.work.vein_vantage.VeinVantageMod;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;

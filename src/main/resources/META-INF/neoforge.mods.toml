@@ -6,11 +6,11 @@ license="Apache License version 2.0"
 modId="vein_vantage"
 version="0.1.6"
 displayName="Vein Vantage"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/Dreyka-Oas/VeinVantage/wiki"
 logoFile="logo.png"
 credits="O.A.S"
 authors="Dreyka Oas"
-description="\u26CF\uFE0F\uD83D\uDC8E Strategic and efficient mining explosion! \uD83D\uDCA5\u2728"
+description="Strategic and efficient mining explosion!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

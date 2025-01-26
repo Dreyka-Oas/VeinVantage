@@ -1,0 +1,135 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2025-01-26 15:31:30
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.parseUnicodeCodepoint(StringParser.java:186) ~[toml-3.8.0.jar%23100!/:?] {}
+-- Mod loading issue --
+Details:
+	Mod file: <No mod information provided>
+	Failure message: File D:\Mcreator\VeinVantage\build\classes\java\main is not a valid mod file
+	Mod version: <No mod information provided>
+	Mod issues URL: <No issues URL found>
+	Exception message: com.electronwill.nightconfig.core.io.ParsingException: Invalid unicode codepoint: D83D
+Stacktrace:
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.parseUnicodeCodepoint(StringParser.java:186) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.unescape(StringParser.java:171) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.StringParser.parseBasic(StringParser.java:25) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.ValueParser.parse(ValueParser.java:49) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.ValueParser.parse(ValueParser.java:73) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:67) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:124) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:87) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:45) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.toml@3.8.0/com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:18) ~[toml-3.8.0.jar%23100!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:99) ~[core-3.8.0.jar%2399!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:216) ~[core-3.8.0.jar%2399!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.file.AsyncFileConfig.loadNow(AsyncFileConfig.java:189) ~[core-3.8.0.jar%2399!/:?] {}
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.0/com.electronwill.nightconfig.core.file.AsyncFileConfig.load(AsyncFileConfig.java:270) ~[core-3.8.0.jar%2399!/:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFileParser.modsTomlParser(ModFileParser.java:48) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFileParser.readModList(ModFileParser.java:35) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:77) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:66) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.readers.JarModsDotTomlModFileReader.createModFile(JarModsDotTomlModFileReader.java:45) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.readers.JarModsDotTomlModFileReader.read(JarModsDotTomlModFileReader.java:88) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModDiscoverer$DiscoveryPipeline.addJarContent(ModDiscoverer.java:202) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModDiscoverer$DiscoveryPipeline.addPath(ModDiscoverer.java:179) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.locators.UserdevLocator.findCandidates(UserdevLocator.java:34) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.moddiscovery.ModDiscoverer.discoverMods(ModDiscoverer.java:72) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.FMLLoader.beginModScan(FMLLoader.java:125) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.FMLServiceProvider.beginScanning(FMLServiceProvider.java:84) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServiceDecorator.runScan(TransformationServiceDecorator.java:97) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.lambda$runScanningTransformationServices$7(TransformationServicesHandler.java:94) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1787) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.runScanningTransformationServices(TransformationServicesHandler.java:96) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:50) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:84) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 281470104 bytes (268 MiB) / 629145600 bytes (600 MiB) up to 16542334976 bytes (15776 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 8700G w/ Radeon 780M Graphics      
+	Identifier: AuthenticAMD Family 25 Model 117 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 4.20
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: Radeon 7
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 2048.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.12033.1030
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 5.60
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 5.60
+	Memory slot #1 type: Unknown
+	Memory slot #2 capacity (MiB): 16384.00
+	Memory slot #2 clockSpeed (GHz): 5.60
+	Memory slot #2 type: Unknown
+	Memory slot #3 capacity (MiB): 16384.00
+	Memory slot #3 clockSpeed (GHz): 5.60
+	Memory slot #3 type: Unknown
+	Virtual memory max (MiB): 67053.81
+	Virtual memory used (MiB): 16757.04
+	Swap memory total (MiB): 3968.00
+	Swap memory used (MiB): 175.69
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 1645296.50, total: 1906955.00
+	Space in storage for workdir (MiB): available: 41565.58, total: 47683.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.65-minecraft.jar                    |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |NeoForge                      |neoforge                      |21.1.65             |Manifest: NOSIGNATURE

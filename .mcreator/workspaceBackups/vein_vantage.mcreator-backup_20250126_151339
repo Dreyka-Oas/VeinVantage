@@ -135,6 +135,10 @@
     "en_us": {
       "enchantment.vein_vantage.vein_sweep": "Vein Sweep",
       "enchantment.vein_vantage.clearing_strike": "Clearing Strike"
+    },
+    "fr_fr": {
+      "enchantment.vein_vantage.vein_sweep": "Frappe déblayante",
+      "enchantment.vein_vantage.clearing_strike": "Balayage de veine"
     }
   },
   "foldersRoot": {
@@ -144,10 +148,10 @@
   "workspaceSettings": {
     "modid": "vein_vantage",
     "modName": "Vein Vantage",
-    "version": "0.1.0",
-    "description": "Better Mining",
+    "version": "0.1.6",
+    "description": "⛏️💎 Strategic and efficient mining explosion! 💥✨",
     "author": "Dreyka Oas",
-    "websiteURL": "https://github.com/Dreyka-Oas/Vein-Vantage.git",
+    "websiteURL": "https://github.com/Dreyka-Oas/VeinVantage/wiki",
     "license": "Apache License version 2.0",
     "serverSideOnly": false,
     "modPicture": "logo",
@@ -156,7 +160,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
-    "credits": "Start",
+    "credits": "O.A.S",
     "modElementsPackage": "oas.work.veinvantage"
   },
   "mcreatorVersion": 202400452410

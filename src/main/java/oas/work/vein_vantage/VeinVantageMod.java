@@ -1,9 +1,9 @@
-package oas.work.veinvantage;
+package oas.work.vein_vantage;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import oas.work.veinvantage.network.VeinVantageModVariables;
+import oas.work.vein_vantage.network.VeinVantageModVariables;
 
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.neoforged.neoforge.network.handling.IPayloadHandler;

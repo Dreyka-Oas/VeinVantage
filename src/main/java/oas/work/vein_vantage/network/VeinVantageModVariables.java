@@ -1,6 +1,6 @@
-package oas.work.veinvantage.network;
+package oas.work.vein_vantage.network;
 
-import oas.work.veinvantage.VeinVantageMod;
+import oas.work.vein_vantage.VeinVantageMod;
 
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
