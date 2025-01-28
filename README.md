@@ -1,4 +1,3 @@
-
 ## 🇬🇧 **Mod Description** 🇬🇧
 
 **VeinVantage** is a Minecraft mod that adds two unique enchantments to enhance your mining experience. These enchantments allow you to mine more efficiently by exploiting ore veins or clearing areas quickly. Perfect for strategic miners! ⛏️💎
@@ -7,12 +6,12 @@
 
 ### **Available Enchantments** 🪄
 
-#### 1. **<span style="color: #00FF00;">Vein Sweep</span>**
+#### 1. **Vein Sweep**
 - **Effect**: Progressively destroys blocks in the same ore vein.  
 - **Usage**: Hold `Shift` while mining to activate the effect.  
 - **Levels**: Higher levels increase the range.  
 
-#### 2. **<span style="color: #00FF00;">Clearing Strike</span>**
+#### 2. **Clearing Strike**
 - **Effect**: Destroys a group of blocks in a 3x3 area based on the player's direction.  
 - **Usage**: Automatically activated when breaking a block.  
 - **Levels**: Higher levels increase the clearing depth.  
@@ -29,8 +28,11 @@ Watch the mod in action with this video:
 ### **Download** 📥
 Download the mod from one of the following platforms:  
 
-- <img src="https://avatars.githubusercontent.com/u/75972339?s=200&v=4" width="20" height="20"> **[Modrinth](https://modrinth.com/mod/vein-vantage)**  
-- <img src="https://www.curseforge.com/favicon.ico" width="20" height="20"> **[CurseForge](https://www.curseforge.com/minecraft/mc-mods/vein-vantage)**  
+- [Modrinth](https://modrinth.com/mod/vein-vantage)  
+  ![Modrinth Downloads](https://img.shields.io/modrinth/dt/vein-vantage?label=Downloads&logo=modrinth&style=flat-square)  
+
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/vein-vantage)  
+  ![CurseForge Downloads](https://cf.way2muchnoise.eu/full_vein-vantage_downloads.svg?badge_style=flat)  
 
 ---
 
@@ -42,7 +44,7 @@ Download the mod from one of the following platforms:
 ---
 
 ### **Credits** 👏
-- **Developer**: <span style="color: #FFA500;">Dreyka Oas</span>  
+- **Developer**: Dreyka Oas  
 - **Inspiration**: Minecraft miners 🖤  
 - **Thanks**: The NeoForge community for their support!  
 
