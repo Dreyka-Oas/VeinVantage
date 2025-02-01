@@ -1,5 +1,3 @@
-## 🇬🇧 **Mod Description** 🇬🇧
-
 **VeinVantage** is a Minecraft mod that adds two unique enchantments to enhance your mining experience. These enchantments allow you to mine more efficiently by exploiting ore veins or clearing areas quickly. Perfect for strategic miners! ⛏️💎
 
 ---
