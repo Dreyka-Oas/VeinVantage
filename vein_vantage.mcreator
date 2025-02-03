@@ -159,9 +159,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.1",
+    "currentGenerator": "neoforge-1.21.4",
     "credits": "O.A.S",
     "modElementsPackage": "oas.work.vein_vantage"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202500105718
 }

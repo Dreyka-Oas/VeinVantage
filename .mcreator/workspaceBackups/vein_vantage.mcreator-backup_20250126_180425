@@ -149,9 +149,9 @@
     "modid": "vein_vantage",
     "modName": "Vein Vantage",
     "version": "0.1.6",
-    "description": "⛏️💎 Strategic and efficient mining explosion! 💥✨",
+    "description": "Strategic and efficient mining explosion!",
     "author": "Dreyka Oas",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/Dreyka-Oas/VeinVantage/wiki",
     "license": "Apache License version 2.0",
     "serverSideOnly": false,
     "modPicture": "logo",
@@ -161,7 +161,7 @@
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "O.A.S",
-    "modElementsPackage": "oas.work.veinvantage"
+    "modElementsPackage": "oas.work.vein_vantage"
   },
   "mcreatorVersion": 202400452410
 }
