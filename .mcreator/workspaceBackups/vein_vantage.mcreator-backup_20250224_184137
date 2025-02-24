@@ -90,7 +90,7 @@
     {
       "name": "OreBlessingStart",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "ore_blessing_start",
       "metadata": {

@@ -2,9 +2,9 @@
   "_fv": 77,
   "_type": "enchantment",
   "definition": {
-    "name": "Auto Repair",
+    "name": "Ore Blessing",
     "supportedSlots": "any",
-    "weight": 1,
+    "weight": 2,
     "anvilCost": 1,
     "maxLevel": 2,
     "damageModifier": 0,

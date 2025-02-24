@@ -1,9 +1,9 @@
 package oas.work.veinvantage.procedures;
 
-import oas.work.vein_vantage.VeinVantageMod;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
@@ -13,11 +13,13 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+
 import java.util.HashSet;
 import java.util.Set;
 
 @EventBusSubscriber
 public class ClearingStrikeStartProcedure {
+
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
         execute(event.getLevel(), event.getPos(), event.getState(), event.getPlayer());
@@ -31,7 +33,12 @@ public class ClearingStrikeStartProcedure {
             .getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("vein_vantage:clearing_strike"))));
         if (enchantmentLevel == 0) return;
 
-        int depth = enchantmentLevel;
+        // Configuration du multiplicateur de portée (ajuster pour l'équilibrage)
+        double reachMultiplier = 1.5; // Changer cette valeur pour ajuster l'augmentation de portée par niveau
+
+        // Calcul de la portée en fonction du niveau de l'enchantement
+        int baseDepth = 1; // Portée de base, même au niveau 1
+        int depth = baseDepth + (int) (enchantmentLevel * reachMultiplier); // Niveau 1 = 1; Level 2 = 3, level 3 = 4, level 4 = 6
 
         Direction facing;
         float pitch = player.getXRot();
@@ -57,7 +64,7 @@ public class ClearingStrikeStartProcedure {
             for (int x = -1; x <= 1; x++) {
                 for (int y = -1; y <= 1; y++) {
                     for (int d = 0; d < depth; d++) {
-                        BlockPos targetPos = (facing == Direction.UP) 
+                        BlockPos targetPos = (facing == Direction.UP)
                                 ? origin.offset(x, d, y)
                                 : origin.offset(x, -d, y);
 

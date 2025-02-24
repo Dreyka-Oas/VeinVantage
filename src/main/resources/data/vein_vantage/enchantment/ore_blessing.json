@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "enchantment.vein_vantage.auto_repair"
+    "translate": "enchantment.vein_vantage.ore_blessing"
   },
   "supported_items": "#minecraft:enchantable/mining",
-  "weight": 1,
+  "weight": 2,
   "max_level": 2,
   "min_cost": {
     "base": 1,

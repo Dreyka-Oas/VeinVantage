@@ -15,7 +15,7 @@
     {
       "name": "VeinSweepStart",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "vein_sweep_start",
       "metadata": {
@@ -74,29 +74,50 @@
         ],
         "dependencies": []
       }
-    }
-  ],
-  "variable_elements": [
+    },
     {
-      "name": "Vein_Vantage",
-      "type": "blockstate",
-      "scope": "player_lifetime",
-      "value": "Blocks.AIR.defaultBlockState()"
+      "name": "OreBlessing",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_blessing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vein_vantage/enchantment/ore_blessing.json"
+        ]
+      }
+    },
+    {
+      "name": "OreBlessingStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ore_blessing_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/vein_vantage/procedures/OreBlessingStartProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
+  "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:OreBlessing",
       "~CUSTOM:ClearingStrike",
       "~CUSTOM:AutoRepair",
       "~CUSTOM:VeinSweep"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:OreBlessing",
       "~CUSTOM:ClearingStrike",
       "~CUSTOM:AutoRepair",
       "~CUSTOM:VeinSweep"
     ],
     "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:OreBlessing",
       "~CUSTOM:ClearingStrike",
       "~CUSTOM:AutoRepair",
       "~CUSTOM:VeinSweep"
@@ -107,7 +128,14 @@
     "en_us": {
       "enchantment.vein_vantage.auto_repair": "Auto Repair",
       "enchantment.vein_vantage.vein_sweep": "Vein Sweep",
-      "enchantment.vein_vantage.clearing_strike": "Clearing Strike"
+      "enchantment.vein_vantage.clearing_strike": "Clearing Strike",
+      "enchantment.vein_vantage.ore_blessing": "Ore Blessing"
+    },
+    "fr_fr": {
+      "enchantment.vein_vantage.auto_repair": "Auto-Réparation",
+      "enchantment.vein_vantage.vein_sweep": "Balayage de Vène",
+      "enchantment.vein_vantage.clearing_strike": "Frappe Dégageante",
+      "enchantment.vein_vantage.ore_blessing": "Bénédiction des Minerais"
     }
   },
   "foldersRoot": {
@@ -117,16 +145,19 @@
   "workspaceSettings": {
     "modid": "vein_vantage",
     "modName": "Vein Vantage",
-    "version": "1.0.0",
-    "author": "Dreyka Oas, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "version": "2.0.0",
+    "description": "Better Mining",
+    "author": "Dreyka Oas",
+    "websiteURL": "https://github.com/Dreyka-Oas/VeinVantage.git",
+    "license": "Apache License version 2.0",
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.4",
+    "credits": "O.A.S",
     "modElementsPackage": "oas.work.vein_vantage"
   },
   "mcreatorVersion": 202500108615

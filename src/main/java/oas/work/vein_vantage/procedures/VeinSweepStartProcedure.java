@@ -19,9 +19,15 @@ import net.minecraft.core.BlockPos;
 import javax.annotation.Nullable;
 import net.neoforged.bus.api.Event;
 import java.util.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
+import net.minecraft.server.level.ServerLevel;
 
 @EventBusSubscriber
 public class VeinSweepStartProcedure {
+
+    private static final ExecutorService executor = Executors.newFixedThreadPool(4); // Ajuste le nombre de threads si nécessaire
 
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -44,9 +50,15 @@ public class VeinSweepStartProcedure {
         Set<BlockPos> visitedPositions = new HashSet<>();
         BlockPos startPos = BlockPos.containing(x, y, z);
 
-        int maxBlocksToDestroy = enchantmentLevel * 10;
+        // Augmentation de la puissance en fonction du niveau de l'enchantement
+        // Maintenant, le nombre de blocs détruits est directement proportionnel au niveau de l'enchantement.
+        // Tu peux ajuster le multiplicateur (15 dans cet exemple) pour contrôler la puissance de l'enchantement.
+        int blocksPerLevel = 15; // Nombre de blocs détruits par niveau d'enchantement
+        int maxBlocksToDestroy = enchantmentLevel * blocksPerLevel;
 
-        floodFillDestroyWithDelay(world, startPos, blockstate, visitedPositions, maxBlocksToDestroy, 2);
+        int baseDelay = 150; // Delai de base en millisecondes (150ms = 0.15 secondes)
+
+        floodFillDestroyWithDelay(world, startPos, blockstate, visitedPositions, maxBlocksToDestroy, baseDelay);
     }
 
     private static void floodFillDestroyWithDelay(LevelAccessor world, BlockPos startPos, BlockState targetBlockState, Set<BlockPos> visitedPositions, int maxBlocksToDestroy, int delay) {
@@ -64,10 +76,24 @@ public class VeinSweepStartProcedure {
 
             visitedPositions.add(pos);
 
-            // Exécuter la destruction du bloc avec un délai
-            world.getServer().execute(() -> {
-                Block.dropResources(world.getBlockState(pos), world, pos, null);
-                world.destroyBlock(pos, false);
+            BlockPos finalPos = pos;
+
+            executor.submit(() -> {
+                try {
+                    Thread.sleep(delay); // Attendre le délai
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    return; // Sortir si le thread est interrompu
+                }
+
+                if (world.getBlockState(finalPos).equals(targetBlockState)) {
+                    if (world instanceof ServerLevel _level) {
+                        _level.getServer().execute(() -> { // Assure que la destruction se fait sur le thread principal
+                            Block.dropResources(world.getBlockState(finalPos), world, finalPos, null);
+                            world.destroyBlock(finalPos, false);
+                        });
+                    }
+                }
             });
 
             blocksDestroyed++;

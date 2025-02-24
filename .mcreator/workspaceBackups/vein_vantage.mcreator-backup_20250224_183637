@@ -101,6 +101,11 @@
       "enchantment.vein_vantage.auto_repair": "Auto Repair",
       "enchantment.vein_vantage.vein_sweep": "Vein Sweep",
       "enchantment.vein_vantage.clearing_strike": "Clearing Strike"
+    },
+    "fr_fr": {
+      "enchantment.vein_vantage.auto_repair": "Auto-Réparation",
+      "enchantment.vein_vantage.vein_sweep": "Balayage de Vène",
+      "enchantment.vein_vantage.clearing_strike": "Frappe Dégageante"
     }
   },
   "foldersRoot": {
@@ -115,11 +120,13 @@
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "oas.work.vein_vantage"
   },
   "mcreatorVersion": 202500108615

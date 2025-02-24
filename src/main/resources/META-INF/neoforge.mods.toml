@@ -1,15 +1,16 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="Not specified"
+license="Apache License version 2.0"
 
 [[mods]]
 modId="vein_vantage"
-version="1.0.0"
+version="2.0.0"
 displayName="Vein Vantage"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/Dreyka-Oas/VeinVantage.git"
 logoFile="logo.png"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="Dreyka Oas, MCreator"
+credits="O.A.S"
+authors="Dreyka Oas"
+description="Better Mining"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
