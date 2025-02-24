@@ -1,0 +1,133 @@
+{
+  "mod_elements": [
+    {
+      "name": "VeinSweep",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_sweep",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vein_vantage/enchantment/vein_sweep.json"
+        ]
+      }
+    },
+    {
+      "name": "VeinSweepStart",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "vein_sweep_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/vein_vantage/procedures/VeinSweepStartProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "AutoRepair",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_repair",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vein_vantage/enchantment/auto_repair.json"
+        ]
+      }
+    },
+    {
+      "name": "AutoRepairStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "auto_repair_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/vein_vantage/procedures/AutoRepairStartProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ClearingStrike",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clearing_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vein_vantage/enchantment/clearing_strike.json"
+        ]
+      }
+    },
+    {
+      "name": "ClearingStrikeStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "clearing_strike_start",
+      "metadata": {
+        "files": [
+          "src/main/java/oas/work/vein_vantage/procedures/ClearingStrikeStartProcedure.java"
+        ],
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Vein_Vantage",
+      "type": "blockstate",
+      "scope": "player_lifetime",
+      "value": "Blocks.AIR.defaultBlockState()"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:ClearingStrike",
+      "~CUSTOM:AutoRepair",
+      "~CUSTOM:VeinSweep"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:ClearingStrike",
+      "~CUSTOM:AutoRepair",
+      "~CUSTOM:VeinSweep"
+    ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:ClearingStrike",
+      "~CUSTOM:AutoRepair",
+      "~CUSTOM:VeinSweep"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "enchantment.vein_vantage.auto_repair": "Auto Repair",
+      "enchantment.vein_vantage.vein_sweep": "Vein Sweep",
+      "enchantment.vein_vantage.clearing_strike": "Clearing Strike"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "vein_vantage",
+    "modName": "Vein Vantage",
+    "version": "1.0.0",
+    "author": "Dreyka Oas, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "oas.work.vein_vantage"
+  },
+  "mcreatorVersion": 202500108615
+}

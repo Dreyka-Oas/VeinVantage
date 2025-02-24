@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Not specified"
+
+[[mods]]
+modId="vein_vantage"
+version="1.0.0"
+displayName="Vein Vantage"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Dreyka Oas, MCreator"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.vein_vantage]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.4.94-beta,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.vein_vantage]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.4]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

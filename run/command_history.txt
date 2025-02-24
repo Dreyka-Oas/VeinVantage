@@ -1,0 +1,3 @@
+/gamemode survival
+/give @a minecraft:gold_block
+/give @a minecraft:gold_block 63
