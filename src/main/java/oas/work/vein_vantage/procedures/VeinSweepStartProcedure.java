@@ -27,7 +27,7 @@ import net.minecraft.server.level.ServerLevel;
 @EventBusSubscriber
 public class VeinSweepStartProcedure {
 
-    private static final ExecutorService executor = Executors.newFixedThreadPool(4); // Ajuste le nombre de threads si nécessaire
+    private static final ExecutorService executor = Executors.newFixedThreadPool(4);
 
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -41,7 +41,6 @@ public class VeinSweepStartProcedure {
     private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
         if (entity == null || !(entity instanceof ServerPlayer) || !entity.isShiftKeyDown()) return;
 
-        // Récupérer le niveau de l'enchantement "vein_sweep" sur l'objet principal de l'entité
         int enchantmentLevel = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
                 .getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("vein_vantage:vein_sweep"))));
 
@@ -50,13 +49,10 @@ public class VeinSweepStartProcedure {
         Set<BlockPos> visitedPositions = new HashSet<>();
         BlockPos startPos = BlockPos.containing(x, y, z);
 
-        // Augmentation de la puissance en fonction du niveau de l'enchantement
-        // Maintenant, le nombre de blocs détruits est directement proportionnel au niveau de l'enchantement.
-        // Tu peux ajuster le multiplicateur (15 dans cet exemple) pour contrôler la puissance de l'enchantement.
-        int blocksPerLevel = 15; // Nombre de blocs détruits par niveau d'enchantement
+        int blocksPerLevel = 15;
         int maxBlocksToDestroy = enchantmentLevel * blocksPerLevel;
 
-        int baseDelay = 150; // Delai de base en millisecondes (150ms = 0.15 secondes)
+        int baseDelay = 150;
 
         floodFillDestroyWithDelay(world, startPos, blockstate, visitedPositions, maxBlocksToDestroy, baseDelay);
     }
@@ -80,15 +76,15 @@ public class VeinSweepStartProcedure {
 
             executor.submit(() -> {
                 try {
-                    Thread.sleep(delay); // Attendre le délai
+                    Thread.sleep(delay);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
-                    return; // Sortir si le thread est interrompu
+                    return;
                 }
 
                 if (world.getBlockState(finalPos).equals(targetBlockState)) {
                     if (world instanceof ServerLevel _level) {
-                        _level.getServer().execute(() -> { // Assure que la destruction se fait sur le thread principal
+                        _level.getServer().execute(() -> {
                             Block.dropResources(world.getBlockState(finalPos), world, finalPos, null);
                             world.destroyBlock(finalPos, false);
                         });

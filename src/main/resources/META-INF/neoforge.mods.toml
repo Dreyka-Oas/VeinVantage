@@ -4,7 +4,7 @@ license="Apache License version 2.0"
 
 [[mods]]
 modId="vein_vantage"
-version="2.0.0"
+version="2.0.8"
 displayName="Vein Vantage"
 displayURL="https://github.com/Dreyka-Oas/VeinVantage.git"
 logoFile="logo.png"

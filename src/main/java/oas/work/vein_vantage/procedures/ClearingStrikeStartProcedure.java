@@ -33,12 +33,10 @@ public class ClearingStrikeStartProcedure {
             .getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("vein_vantage:clearing_strike"))));
         if (enchantmentLevel == 0) return;
 
-        // Configuration du multiplicateur de portée (ajuster pour l'équilibrage)
-        double reachMultiplier = 1.5; // Changer cette valeur pour ajuster l'augmentation de portée par niveau
+        double reachMultiplier = 1.5;
 
-        // Calcul de la portée en fonction du niveau de l'enchantement
-        int baseDepth = 1; // Portée de base, même au niveau 1
-        int depth = baseDepth + (int) (enchantmentLevel * reachMultiplier); // Niveau 1 = 1; Level 2 = 3, level 3 = 4, level 4 = 6
+        int baseDepth = 1;
+        int depth = baseDepth + (int) (enchantmentLevel * reachMultiplier);
 
         Direction facing;
         float pitch = player.getXRot();
