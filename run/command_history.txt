@@ -10,3 +10,5 @@
 /gamemode creative
 /give @s minecraft:diamond_ore
 /give @s minecraft:diamond_ore 63
+/locate structure minecraft:village_plains
+/tp @s -400 ~ 144

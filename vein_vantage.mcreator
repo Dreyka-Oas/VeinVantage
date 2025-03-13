@@ -145,7 +145,7 @@
   "workspaceSettings": {
     "modid": "vein_vantage",
     "modName": "Vein Vantage",
-    "version": "2.0.8",
+    "version": "2.0.9",
     "description": "Better Mining",
     "author": "Dreyka Oas",
     "websiteURL": "https://github.com/Dreyka-Oas/VeinVantage.git",
@@ -160,5 +160,5 @@
     "credits": "O.A.S",
     "modElementsPackage": "oas.work.vein_vantage"
   },
-  "mcreatorVersion": 202500108615
+  "mcreatorVersion": 202500110519
 }

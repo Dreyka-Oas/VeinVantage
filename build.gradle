@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.4.94-beta"
+    version = "21.4.101-beta"
 
     runs {
         client {
