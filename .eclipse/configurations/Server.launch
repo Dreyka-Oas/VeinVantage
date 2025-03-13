@@ -2,9 +2,9 @@
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="VeinVantage"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @D:\\tmp\\MCreator\\VeinVantage\\build\\moddev\\serverRunProgramArgs.txt"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @D:\\tmp\\MCreator\\VeinVantage\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\tmp\\MCreator\\VeinVantage\\bin\\main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="D:\tmp\MCreator\VeinVantage\run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @I:\\Mcreator\\1.21.4\\VeinVantage\\build\\moddev\\serverRunProgramArgs.txt"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @I:\\Mcreator\\1.21.4\\VeinVantage\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%I:\\Mcreator\\1.21.4\\VeinVantage\\bin\\main"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="I:\Mcreator\1.21.4\VeinVantage\run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>
