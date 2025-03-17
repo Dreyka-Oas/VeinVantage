@@ -1,82 +1,36 @@
+Mine Better, Faster, Stronger! ⛏️
 
-# Vein Vantage ✨
+This mod adds a series of **powerful enchantments** to transform your mining experience in Minecraft! Whether you want to mine entire veins of ores, automatically repair your tools, clear large areas, or get bonuses while mining, "Vein Vantage" has the enchantment for you! 💪
 
-Enhance your mining experience with Vein Vantage! This mod adds unique enchantments to make resource gathering faster, more efficient, and more rewarding. Explore each enchantment in detail below:
+**⚙️ How does it work?**
 
-***
+"Vein Vantage" enhances your game with **four unique new enchantments**, each bringing a special ability to your tools and weapons:
 
-## Vein Sweep ⚒️ **Chain Mining**
+1. **⛏️ Vein Sweep:** **Mine entire veins of ores in an instant!** Sneak (Shift key) and mine an ore block enchanted with "Vein Sweep" to **destroy all connected ore blocks of the same type**! Ideal for long mining sessions! 💎
 
-**In short:** Mine veins of similar blocks instantly! (Shift + click) 💥
+   [![Vein Sweep video](https://img.youtube.com/vi/sopLYpXaVdI/0.jpg)](https://youtu.be/sopLYpXaVdI)
 
-<details>
-  <summary>⚙️ Technical Details</summary>
+2. **🛠️ Auto Repair:** **Your tools repair themselves while mining!** Every time you mine a block with a tool enchanted with "Auto Repair", there's a chance that **the tool will slightly repair itself**, extending its lifespan and saving you constant trips back and forth to the anvil! 🔧
 
-- **Trigger:** `BlockBreakEvent` (Shift + Server Player)
-- **Condition:** `vein_sweep` enchantment (level > 0) on tool
-- **Algorithm:** BFS (Breadth-First Search) for similar adjacent blocks
-- **Limit:** `maxBlocks = level * 15`
-- **Delay:** 150ms/block (ExecutorService - 4 threads)
-- **Execution:** Main thread via `ServerLevel`
-- **Video:** [Vein Sweep video](https://youtu.be/sopLYpXaVdI) 🎥
-</details>
+   [![AutoRepair video](https://img.youtube.com/vi/pFN7gfGffDQ/0.jpg)](https://youtu.be/pFN7gfGffDQ)
 
-***
+3. **💥 Clearing Strike:** **Quickly clear large areas!** When you mine a block with a tool enchanted with "Clearing Strike", it **destroys a line of blocks in the direction you are facing**, creating tunnels or trenches in the blink of an eye! 🚀
 
-## Auto Repair 🛠️ **Automatic Repair**
+   [![ClearingStrike video](https://img.youtube.com/vi/49d1hwGpd5s/0.jpg)](https://youtu.be/49d1hwGpd5s)
 
-**In short:** Your tool repairs itself while you mine! (70% chance) 🔧
+4. **🌟 Ore Blessing:** **Get bonuses while mining ores!** Mining an ore block with a tool enchanted with "Ore Blessing" gives you a chance to get temporary **beneficial potion effects** like Haste, Speed, or Regeneration! A welcome boost for your underground explorations! ✨
 
-<details>
-  <summary>⚙️ Technical Details</summary>
+   [![Ore Blessing video](https://img.youtube.com/vi/tbiZE7Szu3A/0.jpg)](https://youtu.be/tbiZE7Szu3A)
 
-- **Trigger:** `BlockBreakEvent`
-- **Condition:** `auto_repair` enchantment on tool
-- **Probability:** 70% (if tool damaged)
-- **Repair:**
-    - Base: 2% damage
-    - Bonus: +1%/level (level > 1)
-    - Max: 10%
-- **Application:** Tool durability adjustment
-- **Video:** [AutoRepair video](https://youtu.be/pFN7gfGffDQ) 🎬
-</details>
+**🎮 How to use it?**
 
-***
+1. **✨ Obtain the enchantments:** "Vein Vantage" enchantments can be obtained in various ways (*depending on the mod's configuration, potentially via the enchantment table, anvil, or specific loot*). Consult the mod's documentation for more details on obtaining enchantments.
+2. **🔨 Apply the enchantments:** Use an **anvil** to apply "Vein Vantage" enchantments to your **pickaxes, axes, shovels, or swords** (depending on the enchantment).
+3. **⛏️ Test the powers!:** Equip your enchanted tools and **experience the new mining and combat capabilities** that "Vein Vantage" offers! Don't forget to sneak for "Vein Sweep" and aim carefully for "Clearing Strike"!
 
-## Clearing Strike ⚡ **Area Strike**
+**📌 Important Points:**
 
-**In short:** Expand your mining area based on your orientation! 🌪️
-
-<details>
-  <summary>⚙️ Technical Details</summary>
-
-- **Trigger:** `BlockBreakEvent`
-- **Condition:** `clearing_strike` enchantment on tool
-- **Range:**
-    - Base: 1 block
-    - Increase: Range = base + (level × 1.5)
-- **Orientation:** Vertical/Horizontal (view angle)
-- **Effect:** Destruction of similar adjacent blocks
-- **Video:** [ClearingStrike video](https://youtu.be/49d1hwGpd5s) 📹
-</details>
-
-***
-
-## Ore Blessing ⛏️ **Ore Buff**
-
-**In short:** Get bonuses mining ore: Haste, Speed, Regeneration! 🍀
-
-<details>
-  <summary>⚙️ Technical Details</summary>
-
-- **Trigger:** `BlockBreakEvent`
-- **Ore:** Broken block ID contains "ore"
-- **Condition:** `ore_blessing` enchantment on tool
-- **Effects:**
-    - Haste ⚡
-    - Speed 🚀
-    - Regeneration ❤️
-- **Probabilities:** 30% base + 10%/level (max 100%)
-- **Duration & Potency:** Duration +20 ticks/level, Speed/Regen Amplifier = (level - 1)
-- **Video:** [Ore Blessing video](https://youtu.be/tbiZE7Szu3A) 🎥
-</details>
+* ⛏️ **Variety of Enchantments:** Enjoy **four unique enchantments** to vary your playstyle and optimize your mining.
+* ⚙️ **Simple Configuration:** The mod is designed to be **easy to pick up**, once the enchantments are obtained, their use is intuitive.
+* 🌟 **Mining Enhancement:** "Vein Vantage" makes mining **faster, more efficient, and more rewarding**, whether you are a casual miner or a spelunking expert.
+* 💻 **Client/Server Mod:** (*To be verified depending on the exact nature of the mod, but enchantments are generally client-server, to be confirmed.*) The mod must be installed on the **client** to benefit from the enchantments and potentially on the **server** for the enchantments to work in multiplayer.
